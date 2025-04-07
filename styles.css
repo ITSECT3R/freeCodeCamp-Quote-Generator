@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #5a7d7c;
+  transition: background-color 1s ease;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#quote-box {
+  width: 450px;
+  padding: 40px 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.quote-content {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#text {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  color: #5a7d7c;
+}
+
+#author {
+  text-align: right;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #5a7d7c;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.button {
+  background-color: #5a7d7c;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 18px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #476866;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 550px) {
+  #quote-box {
+    width: 90%;
+    padding: 25px 30px;
+  }
+  
+  #text {
+    font-size: 1.4rem;
+  }
+}
